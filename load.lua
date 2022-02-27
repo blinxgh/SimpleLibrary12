@@ -103,11 +103,12 @@ function library:CreateWindow(name)
 	TopBarName.TextWrapped = true
 	TopBarName.TextXAlignment = Enum.TextXAlignment.Left
 	
-	ContainerListLayout.Name = "ContainerListLayout"
-	ContainerListLayout.Parent = Container
-	ContainerListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-	ContainerListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	ContainerListLayout.Padding = UDim.new(0, 7)
+	Container.Name = "Container"
+	Container.Parent = game.StarterGui.Library.Main
+	Container.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Container.BackgroundTransparency = 1.000
+	Container.Position = UDim2.new(0, 0, 0.308823526, 0)
+	Container.Size = UDim2.new(0, 150, 0, 86)
 
 	ContainerPadding.Name = "ContainerPadding"
 	ContainerPadding.Parent = Container
